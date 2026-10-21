@@ -1,0 +1,33 @@
+{
+    "name": "nexeno_freeup",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite build --watch",
+        "build": "vite build",
+        "cache:clear": "${OCC:-php ../../occ} config:app:set theming cachebuster --value=$(date +%s)",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix",
+        "test:e2e": "playwright test",
+        "test:e2e:ui": "playwright test --ui",
+        "test:e2e:report": "playwright show-report"
+    },
+    "dependencies": {
+        "@nextcloud/axios": "^2.6.0",
+        "@nextcloud/l10n": "^3.4.1",
+        "@nextcloud/router": "^3.1.0",
+        "@nextcloud/vue": "^9.9.0",
+        "pdf-lib": "^1.17.1",
+        "vue": "^3.4.0",
+        "vue-material-design-icons": "^5.3.1"
+    },
+    "devDependencies": {
+        "@nextcloud/eslint-config": "9.0.1",
+        "@playwright/test": "^1.50.0",
+        "@vitejs/plugin-vue": "^5.0.0",
+        "eslint": "10.12.0",
+        "sass": "^1.103.1",
+        "vite": "^5.0.0"
+    }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="6.20.0@804f03c0c183d149fcd4b8c7c0c9b3fbf836d34c">
+  <file src="lib/Db/AuditMapper.php">
+    <RedundantCast>
+      <code><![CDATA[(int)$qb->executeStatement()]]></code>
+    </RedundantCast>
+  </file>
+  <file src="lib/Db/FreeUpRequestMapper.php">
+    <RedundantCast>
+      <code><![CDATA[(int)$qb->executeStatement()]]></code>
+    </RedundantCast>
+  </file>
+  <file src="lib/Db/SnapshotMapper.php">
+    <RedundantCast>
+      <code><![CDATA[(int)$qb->executeStatement()]]></code>
+    </RedundantCast>
+  </file>
+  <file src="lib/Service/Accounts/AccountReportService.php">
+    <InvalidOperand>
+      <code><![CDATA[$inactiveDays / 30.416]]></code>
+    </InvalidOperand>
+    <RedundantCast>
+      <code><![CDATA[(int)$user->getLastLogin()]]></code>
+    </RedundantCast>
+  </file>
+  <file src="lib/Service/Duplicates/CleanupProposalService.php">
+    <RedundantCondition>
+      <code><![CDATA[$dup->getLastScanned()?->getTimestamp()]]></code>
+    </RedundantCondition>
+    <TypeDoesNotContainNull>
+      <code><![CDATA[0]]></code>
+    </TypeDoesNotContainNull>
+    <TypeDoesNotContainType>
+      <code><![CDATA[empty($target['checksums'])]]></code>
+    </TypeDoesNotContainType>
+  </file>
+  <file src="lib/Service/Duplicates/DuplicatePruner.php">
+    <RedundantFunctionCall>
+      <code><![CDATA[array_values]]></code>
+    </RedundantFunctionCall>
+  </file>
+  <file src="lib/Service/Duplicates/DuplicateScanService.php">
+    <RedundantCast>
+      <code><![CDATA[(int)$size]]></code>
+    </RedundantCast>
+  </file>
+  <file src="lib/Service/Requests/ApprovalBoardService.php">
+    <InvalidOperand>
+      <code><![CDATA[30.416 * 86400]]></code>
+      <code><![CDATA[max(0, $now - (int)$lastLogin) / (30.416 * 86400)]]></code>
+    </InvalidOperand>
+  </file>
+  <file src="lib/Service/Requests/RequestWorkflowService.php">
+    <RedundantCast>
+      <code><![CDATA[(int)$account->getLastLogin()]]></code>
+      <code><![CDATA[(int)$user->getLastLogin()]]></code>
+    </RedundantCast>
+  </file>
+  <file src="lib/Service/Settings/SettingsService.php">
+    <InvalidOperand>
+      <code><![CDATA[$days / 30.4167]]></code>
+      <code><![CDATA[$months * 30.4167]]></code>
+    </InvalidOperand>
+  </file>
+  <file src="lib/Util/Format.php">
+    <InvalidOperand>
+      <code><![CDATA[$bytes /= pow(1024, $pow)]]></code>
+      <code><![CDATA[($bytes ? log($bytes) : 0) / log(1024)]]></code>
+      <code><![CDATA[round($bytes, $precision)]]></code>
+    </InvalidOperand>
+  </file>
+  <file src="lib/Util/LocaleFormatter.php">
+    <InvalidArrayOffset>
+      <code><![CDATA[self::UNITS[$pow]]]></code>
+    </InvalidArrayOffset>
+    <InvalidOperand>
+      <code><![CDATA[$bytes / (1024 ** $pow)]]></code>
+    </InvalidOperand>
+  </file>
+</files>

@@ -1,0 +1,39 @@
+{
+    "name": "nexeno/nexeno_freeup",
+    "description": "Account and storage lifecycle governance for Nextcloud",
+    "type": "project",
+    "license": "AGPL-3.0-or-later",
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.8",
+        "nextcloud/coding-standard": "^1.3",
+        "nextcloud/ocp": "dev-stable32"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        },
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": true,
+            "forward-command": false
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@composer bin all install --ansi"
+        ],
+        "post-update-cmd": [
+            "@composer bin all update --ansi"
+        ],
+        "lint": "find . -name \\*.php -not -path './vendor/*' -not -path './vendor-bin/*' -not -path './node_modules/*' -print0 | xargs -0 -n1 php -l",
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "psalm": "psalm --no-cache --threads=1",
+        "psalm:update-baseline": "psalm --no-cache --threads=1 --update-baseline"
+    }
+}
