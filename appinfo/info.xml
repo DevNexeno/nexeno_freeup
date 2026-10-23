@@ -52,14 +52,14 @@ FreeUp runs fully inside your Nextcloud and sends no data to outside services. I
     <author mail="support@nexeno.io" homepage="https://nexeno.io/">Nexeno</author>
     <namespace>NexenoFreeUp</namespace>
     <documentation>
-        <user>https://github.com/DevNexeno/nexeno_freeup/blob/main/README.md</user>
+        <user>https://github.com/Nexeno-HQ/nexeno_freeup/blob/main/README.md</user>
     </documentation>
     <category>tools</category>
     <category>monitoring</category>
 
     <website>https://nexeno.io/</website>
-    <bugs>https://github.com/DevNexeno/nexeno_freeup/issues</bugs>
-    <repository type="git">https://github.com/DevNexeno/nexeno_freeup.git</repository>
+    <bugs>https://github.com/Nexeno-HQ/nexeno_freeup/issues</bugs>
+    <repository type="git">https://github.com/Nexeno-HQ/nexeno_freeup.git</repository>
     <screenshot>https://nexeno.io/assets/nexeno_freeup/overview.png</screenshot>
     <screenshot>https://nexeno.io/assets/nexeno_freeup/inactive-accounts.png</screenshot>
     <screenshot>https://nexeno.io/assets/nexeno_freeup/approvals.png</screenshot>

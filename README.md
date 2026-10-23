@@ -17,11 +17,11 @@ everything can be restored.
 It is built for organisations with a lot of turnover, such as universities, schools, public bodies and companies,
 where accounts of graduates and former staff keep using paid licences and storage.
 
-<!-- Screenshots: add the images and uncomment.
-![Overview](REPLACE-screenshot-overview.png)
-![Inactive accounts](REPLACE-screenshot-inactive-accounts.png)
-![Approvals](REPLACE-screenshot-approvals.png)
--->
+![Overview: licences in use, inactive accounts, storage held by inactive accounts and space taken by duplicate files](https://nexeno.io/assets/nexeno_freeup/overview.png)
+![Inactive accounts: accounts with no login for the chosen period, ready to propose for disabling](https://nexeno.io/assets/nexeno_freeup/inactive-accounts.png)
+![Approvals: requests moving from proposed to approved to completed](https://nexeno.io/assets/nexeno_freeup/approvals.png)
+![Duplicate files: identical files stored by several users and the space a clean-up would free](https://nexeno.io/assets/nexeno_freeup/duplicate-files.png)
+![Storage by account: storage per account against its quota, by status](https://nexeno.io/assets/nexeno_freeup/storage-by-account.png)
 
 ## Features
 
@@ -143,7 +143,7 @@ Run `make help` to list every command.
 
 ## Reporting issues
 
-Please report bugs and ideas in the [issue tracker](https://github.com/DevNexeno/nexeno_freeup/issues). For a
+Please report bugs and ideas in the [issue tracker](https://github.com/Nexeno-HQ/nexeno_freeup/issues). For a
 bug, include your Nextcloud version, your database and the steps to reproduce it.
 
 ## Licence
